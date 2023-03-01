@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)file:///E:/web%20devalaping/html/Jai%20'%20projet.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+   
+    <title>Jai ' projet</title>
+    <link rel="icon" type="image/jpeg" href="file:///E:/web%20devalaping/html/download.png">
+
+   
+    <style>
+        h1{ 
+           text-align: center;
+            padding-top: 50px;
+            padding-bottom: 60px;
+            color:darkorange;
+            font-size: 40px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
+        }
+       
+        body{
+            background-color: aqua;
+        }
+        a{
+            
+            text-decoration: none;
+            color: rgb(218, 62, 6);
+            padding-left: 400px;
+            font-family:MV Boli;
+           
+            font-size: 30px;
+        }
+        a:hover{
+            color: cornsilk;
+        }
+        a:active{
+             color:darkmagenta
+        } 
+        a:visited{
+            color:gold;
+        } 
+        p{
+            color:crimson;
+            text-transform: capitalize;
+            font-size: 25px;
+        }  
+        p.x{
+            padding-left: 40px;
+        }          
+          
+           
+        p.a{
+          text-align: end;
+          padding-right: 40px;
+      }   
+      label{
+        font-size: 20px;
+      }
+    </style>
+</head>
+<body>
+    
+    <h1>WELCOME </h1>
+
+    <label>click to register your name:</label>
+   <button class="abc">enter name</button>
+<br>
+<label>click to delete your name:</label>
+<button class="jai">delete name</button>
+<p>
+    </p><pre> 
+
+    </pre>
+<p></p>
+<br>
+    <a href="file:///E:/web%20devalaping/web/my%20projecct/callender.html"> 1.CALENDER</a>
+    <br>
+    <p>
+ 
+    </p>
+    <a href="file:///E:/web%20devalaping/web/my%20projecct/chess%20bord.html">2.CHESS BORD </a>
+    <br>
+    <p>
+
+    </p>
+    <a href="file:///E:/web%20devalaping/web/my%20projecct/marquee%20tag.html">3.SROLL IMAGE &amp; NAME</a>
+    <br>
+    <p>
+
+    </p>
+    <a href="file:///E:/web%20devalaping/web/my%20projecct/textformeting%20tags.html">4.TEXT</a>
+    <br>
+    <p>
+
+    </p>
+    <a href="file:///E:/web%20devalaping/web/my%20projecct/form%20tags.html">5.BIO DATA FORM</a>
+    <br>
+    <a href="file:///E:/web%20devalaping/web/my%20projecct/my%20project.html"></a>
+
+    <br>
+    <p class="x">
+        thanks for seen my project
+    </p>
+        <br>
+    <p class="a">
+        see you my next project
+    </p>
+
+
+    <script>
+        alert("welcome to my project");
+
+        var buttonclick=document.querySelector(".abc");
+        var erease=document.querySelector(".jai");
+        var heading=document.querySelector("h1"); 
+        
+        buttonclick.onclick=function(){
+            yourname()
+        }
+
+        erease.onclick=function(){
+            localStorage.clear();
+        }
+
+
+        function yourname(){
+           var name=prompt("enter your name");
+           localStorage.setItem("username",name);
+           heading.innerHTML="WELCOME "+name;
+        }
+
+           if(! localStorage.getItem("username")){
+            yourname();
+           }
+           else{
+            var name=localStorage.getItem("yourname");
+            heading.innerHTML="WELCOME"+name;
+        }
+
+        
+    </script>
+
+
+
+</body></html>
